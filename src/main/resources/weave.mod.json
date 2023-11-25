@@ -1,11 +1,11 @@
 {
   "mixinConfigs": [
-    "examplemod.mixins.json"
+    "stormy.mixins.json"
   ],
   "entrypoints": [
-    "com.example.mod.ExampleMod"
+    "me.tryfle.stormy.Main"
   ],
   "hooks": [
-    "com.example.mod.hook.MinecraftHook"
+    "me.tryfle.stormy.hooks.CPSHook"
   ]
 }
