@@ -47,6 +47,7 @@ public class ModuleManager {
       addModule(new ClickGuiModule());
       addModule(new ClosetSpeed());
       addModule(new Blink());
+      addModule(new NoRotate());
       addModule(new Bhop());
       addModule(new Killaura());
       addModule(new AntiVoid());
@@ -57,6 +58,7 @@ public class ModuleManager {
       addModule(new AutoBlock());
       addModule(new Strafe());
       addModule(new Criticals());
+      addModule(new Stealer());
 
       initialized = true;
    }
