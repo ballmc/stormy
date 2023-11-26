@@ -42,6 +42,7 @@ public class ModuleManager {
       addModule(new Chams());
       addModule(new ChestESP());
       addModule(new Nametags());
+      addModule(new ExplicitB9NameTags());
       addModule(new PlayerESP());
       addModule(new ArrayListModule());
       addModule(new ClickGuiModule());

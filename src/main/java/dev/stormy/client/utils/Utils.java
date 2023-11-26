@@ -13,6 +13,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.MathHelper;
+import net.minecraft.util.*;
 import org.lwjgl.opengl.GL11;
 
 import java.awt.*;
@@ -23,7 +24,15 @@ import java.util.*;
 public class Utils {
    private static final Random rand = new Random();
    public static final Minecraft mc = Minecraft.getMinecraft();
-
+   public static net.minecraft.util.Timer getTimer() {
+      try {
+         Field timerField = Minecraft.class.getDeclaredField("timer");
+         timerField.setAccessible(true);
+         return (net.minecraft.util.Timer) timerField.get(Minecraft.getMinecraft());
+      } catch (NoSuchFieldException | IllegalAccessException e) {
+         throw new RuntimeException(e);
+      }
+   }
    public static class Java {
 
       public static ArrayList<String> toArrayList(String[] fakeList) {
