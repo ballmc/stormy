@@ -19,6 +19,8 @@ import org.lwjgl.opengl.GL11;
 import java.awt.*;
 import java.util.List;
 import java.util.*;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 @SuppressWarnings("unused")
 public class Utils {

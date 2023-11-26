@@ -9,6 +9,9 @@ import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import org.lwjgl.opengl.GL11;
 import dev.stormy.client.utils.Utils;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+
 import java.awt.*;
 
 public class RenderUtils {
