@@ -12,6 +12,11 @@
     "NetworkManagerMixin",
     "RendererLivingEntityMixin",
     "RenderGlobalMixin",
-    "IMixinMinecraft"
+    "IMixinMinecraft",
+    "EntityRendererMixin",
+    "BlockMixin",
+    "BlockModelRendererMixin",
+    "WorldRendererMixin",
+    "BlockGrassMixin"
   ]
 }

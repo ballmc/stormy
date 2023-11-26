@@ -39,10 +39,10 @@ public class ModuleManager {
       addModule(new FastPlace());
       addModule(new SafeWalk());
       addModule(new AntiBot());
+      addModule(new Xray());
       addModule(new Chams());
       addModule(new ChestESP());
       addModule(new Nametags());
-      addModule(new ExplicitB9NameTags());
       addModule(new PlayerESP());
       addModule(new ArrayListModule());
       addModule(new ClickGuiModule());
