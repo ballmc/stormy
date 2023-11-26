@@ -17,10 +17,8 @@ public class Xray extends Module {
     public Xray() {
         super("Xray", ModuleCategory.Render, 0);
 
-        this.registerSettings(
-                opacity = new SliderSetting("Opacity", 120, 0, 255, 1),
-                hypixel = new TickSetting("Hypixel", true)
-        );
+        this.registerSetting(opacity = new SliderSetting("Opacity", 120, 0, 255, 1));
+        this.registerSetting(hypixel = new TickSetting("Hypixel", true));
 
         instance = this;
 
